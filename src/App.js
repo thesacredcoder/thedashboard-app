@@ -23,9 +23,11 @@ import {
   Line,
 } from "./pages";
 import "./App.css";
+import { useStateContext } from "./contexts/ContextProvider";
 
 function App(props) {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
+  // const activeMenu = true;
   return (
     <div>
       <BrowserRouter>
